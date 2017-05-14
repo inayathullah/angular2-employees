@@ -1,0 +1,25 @@
+<div class="well">
+    <div class="row">
+        <div class="col-md-3">
+            Id:
+        </div>
+        <div class="col-md-9">{{employee.id}}</div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            Name:
+        </div>
+        <div class="col-md-9">{{employee.employeeName}}</div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            DOB:
+        </div>
+        <div class="col-md-9">{{employee.dob}}</div>
+    </div>
+     <div class="row">
+        <div class="col-md-12">
+            <button class="btn btn-primary btn-md pull-right" [routerLink]="['/Employees',employee.id]">Detail</button>
+        </div>
+     </div>
+</div>
